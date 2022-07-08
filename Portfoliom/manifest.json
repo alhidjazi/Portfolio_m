@@ -1,0 +1,16 @@
+{
+    "name": "porfolio",
+    "short_name": "porfoliom",
+    "icons": [
+      {
+        "src": "/img/coding.jpg",
+        "sizes": "36x36",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#3a6cf4",
+    "background_color": "#000016",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons kullanmak için css çağrdım-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- kendim oluşturduğum css kullanmak için çağrdım-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap css çağrdım
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="/apple-mobile-web-app-capable" content="yes">
+    <meta name="/apple-mobile-web-app-title" content="/127.0.0.1">
+    <meta name="/apple-mobile-web-app-status-bar-style" content="black">
+    <link href="/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/128x128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/128x128.png">
+    <link rel="icon" sizes="192x192" href="/192x192.png">
+    <link rel="icon" sizes="128x128" href="/128x128.png">
+    <script>
+        if ('serviceWorker' in navigator) {
+        	window.addEventListener('load', function () {
+        		navigator.serviceWorker.register('/sw.js?v=3');
+        	});
+        }
+    </script>
+    <title>Porfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#logo" class="logo">Porfolio'm</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+
+        </nav>
+    </header>
+    <section class="main">
+        <div>
+            <h2>Merhaba, ben Osman<br><span>Web Developper</span></h2>
+            <h3>Kastamonu Üniversitesi Öğrencisiyim</h3>
+            <a href="#projects" class="main-btn">View my Projects</a>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2> 
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Web Developper</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius, perferendis molestiae enim explicabo veritatis officiis molestias pariatur repudiandae non voluptates magnam ipsa quaerat minima quod illo! Saepe, laborum tenetur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="info">
+                    <h3>Script Writer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius, perferendis molestiae enim explicabo veritatis officiis molestias pariatur repudiandae non voluptates magnam ipsa quaerat minima quod illo! Saepe, laborum tenetur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Bilgisayar Müh. Böl. Mezunum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam eius, perferendis molestiae enim explicabo veritatis officiis molestias pariatur repudiandae non voluptates magnam ipsa quaerat minima quod illo! Saepe, laborum tenetur!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/coding.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writer & programming</p>
+                    <strong class="project-title">
+                        <span>Web Dev</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/coding.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writer & programming</p>
+                    <strong class="project-title">
+                        <span>Web Dev</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/coding.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writer & programming</p>
+                    <strong class="project-title">
+                        <span>Web Dev</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="/img/coding.jpg" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Script Writer & programming</p>
+                    <strong class="project-title">
+                        <span>Web Dev</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="cards contact" id="contacts">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+905415230340</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>abouadil226@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Ousman Moussa</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <button id="install-app" style="display: none">Uygulamayı Yükle</button>
+<script>
+    const installButton = document.getElementById('install-app');
+    let beforeInstallPromptEvent
+    window.addEventListener("beforeinstallprompt", function(e) {
+        e.preventDefault();
+        beforeInstallPromptEvent = e
+        installButton.style.display = 'block'
+        installButton.addEventListener("click", function() {
+            e.prompt();
+        });
+        installButton.hidden = false;
+    });
+    installButton.addEventListener("click", function() {
+        beforeInstallPromptEvent.prompt();
+    });
+</script>
+</body>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+-->
+</html>
